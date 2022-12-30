@@ -1,0 +1,11 @@
+@use '../../styles/scss/variables' as *;
+
+.title {
+  width: 273px;
+  height: 66px;
+  font-weight: 400;
+  font-size: 14px;
+  color: $blackColor;
+  margin: 3px 0;
+  line-height: 22px;
+}

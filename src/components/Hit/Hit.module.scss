@@ -1,0 +1,31 @@
+@use '../../styles/scss/mixins' as *;
+@use '../../styles/scss/variables' as *;
+
+$hitHeight: 24px;
+
+.hit {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 170px;
+  width: 64px;
+  height: $hitHeight;
+  font-size: 12px;
+  color: $whiteColor;
+  @include flexAlignment(space-between);
+
+  .hit-box {
+    background: $hitColor;
+    width: 36px;
+    height: $hitHeight;
+    @include flexAlignment();
+  }
+
+  .rectangle-left {
+    fill: $hitColor;
+  }
+
+  .rectangle-right {
+    fill: $hitDarkColor;
+  }
+}

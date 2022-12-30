@@ -1,0 +1,15 @@
+@use '../../styles/scss/variables' as *;
+
+.price {
+  font-weight: 600;
+  font-size: 22px;
+  color: $blackColor;
+  margin-top: 7px;
+  line-height: 20px;
+
+  span {
+    color: $middleGreyColor;
+    font-weight: 500;
+    font-size: 11px;
+  }
+}

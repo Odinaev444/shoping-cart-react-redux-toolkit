@@ -1,0 +1,8 @@
+@use '../../styles/scss/mixins' as *;
+
+.image {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  @include centerElement;
+}

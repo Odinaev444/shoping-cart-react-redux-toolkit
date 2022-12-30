@@ -1,0 +1,10 @@
+@mixin centerElement {
+  margin: 0 auto;
+}
+
+@mixin flexAlignment($horizontal: center, $vertical: center, $wrap: unset) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+  flex-wrap: $wrap;
+}

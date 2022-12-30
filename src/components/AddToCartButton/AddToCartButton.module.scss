@@ -1,0 +1,57 @@
+@use '../../styles/scss/variables' as *;
+@use '../../styles/scss/mixins' as *;
+
+.container {
+  position: relative;
+  width: 175px;
+  height: 40px;
+
+  .button {
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100px;
+    height: 39.67px;
+    border-radius: 90px;
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: $primaryColor;
+    cursor: pointer;
+    border: none;
+  }
+
+  .button-active {
+    @extend .button;
+    width: 175px;
+    background: $successColor;
+  }
+
+  .counter {
+    position: absolute;
+    left: 56px;
+    width: 119px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 19px;
+    background: $lowGreyColor;
+    border-radius: 30px;
+    @include flexAlignment(flex-end);
+
+    div {
+      width: 45px;
+      @include flexAlignment(space-between);
+
+      span {
+        font-weight: 500;
+        font-size: 12px;
+        color: $blackColor;
+        opacity: 0.8;
+      }
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}

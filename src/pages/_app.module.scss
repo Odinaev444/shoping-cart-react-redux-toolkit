@@ -1,0 +1,10 @@
+@use '../styles/scss/mixins' as *;
+
+.container {
+  @include centerElement();
+  max-width: 1780px;
+  height: 954px;
+  margin-top: 26px;
+  @include flexAlignment(center, unset, wrap);
+  gap: 30px;
+}

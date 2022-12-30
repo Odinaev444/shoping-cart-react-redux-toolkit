@@ -1,0 +1,33 @@
+@use '../../styles/scss/variables' as *;
+@use '../../styles/scss/mixins' as *;
+
+.card {
+  width: 332px;
+  height: 462px;
+  background: $whiteColor;
+  box-sizing: border-box;
+  border: 1px solid $lowGreyColor;
+  padding: 30px;
+
+  .photo {
+    margin-bottom: 12px;
+  }
+
+  .review-row {
+    @include flexAlignment(space-between);
+  }
+
+  .review {
+    width: 142px;
+    height: 14px;
+    @include flexAlignment(space-between);
+  }
+
+  .bottom {
+    position: relative;
+    width: 278px;
+    height: 40px;
+    margin-top: 13px;
+    @include flexAlignment(space-between);
+  }
+}

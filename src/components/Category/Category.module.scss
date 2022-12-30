@@ -1,0 +1,9 @@
+@use '../../styles/scss/variables' as *;
+
+.category {
+  font-weight: 400;
+  font-size: 12px;
+  color: $middleGreyColor;
+  line-height: 20px;
+  margin: 0;
+}

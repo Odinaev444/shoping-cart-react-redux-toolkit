@@ -1,0 +1,9 @@
+@use '../../styles/scss/variables' as *;
+
+.star-default {
+  fill: $lightGreyColor;
+}
+
+.star-active {
+  fill: $ratingColor;
+}
