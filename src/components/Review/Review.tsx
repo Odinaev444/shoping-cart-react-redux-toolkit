@@ -4,7 +4,7 @@ export const Review = ({ count }: { count: number }) => {
 
   return (
     <span className={styles.review}>
-      {count} отзыва
+      {count} reviews
     </span>
   )
 }

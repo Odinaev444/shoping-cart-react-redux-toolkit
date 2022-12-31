@@ -1,0 +1,1 @@
+export { Hot } from './Hot';

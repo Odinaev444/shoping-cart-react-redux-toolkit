@@ -31,7 +31,7 @@ export const AddToCartButton = ({ item, existInCard }: { item: Product, existInC
         className={`${styles.button} ${itemInCard ? styles['button-active'] : ''}`}
         onClick={addToCard}
       >
-        {itemInCard ? 'В корзине' : 'В корзину'}
+        {itemInCard ? 'Added' : 'Add to cart'}
       </button>
       {
         !itemInCard ?

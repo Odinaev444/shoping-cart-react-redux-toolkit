@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Hit } from '../Hit';
+import { Hot } from '../Hot';
 
 import styles from './Photo.module.scss';
 
@@ -13,7 +13,7 @@ export const Photo = ({ isHit, imageUrl }: { isHit: boolean, imageUrl: string })
         height={220}
         priority
       />
-      {isHit ? <Hit /> : null}
+      {isHit ? <Hot /> : null}
     </div>
   )
 }
