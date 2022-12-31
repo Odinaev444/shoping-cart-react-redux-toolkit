@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Card from '../components/Card';
+import { Cart } from '../components/Cart';
 import { Product } from '../models/Product';
 import { useGetProductsByLimitQuery } from '../services/ProductService';
 import { useAppDispatch, useAppSelector } from '../store/hooks';
@@ -21,6 +22,7 @@ export default function Homes() {
 
   return (
     <>
+      <Cart />
       {
         products.map((item: Product) => {
           return (
